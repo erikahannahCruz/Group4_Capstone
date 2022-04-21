@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Schedule"
+        android:title="Schedule"
+        android:icon="@drawable/ic_calendar_fg"
+        />
+
+    <item
+        android:id="@+id/Map"
+        android:title="Map"
+        android:icon="@drawable/ic_map_fg"
+        />
+
+    <item
+        android:id="@+id/Profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_profile_fg"
+        />
+
+    <item
+        android:id="@+id/Settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_settings_fg"
+        />
+
+</menu>
