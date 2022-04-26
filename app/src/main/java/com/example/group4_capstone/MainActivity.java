@@ -30,13 +30,15 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
         bottomNavigationView.setSelectedItemId(R.id.Map);
 
+        //displays top banner information on startup
+        getSupportFragmentManager().beginTransaction().replace(R.id.flFragmentTopBanner, topbanner).commit();
+
     }
 
     Profile profile = new Profile();
     Map map = new Map();
     Schedule schedule = new Schedule();
     Settings settings = new Settings();
-
 
 
     @Override

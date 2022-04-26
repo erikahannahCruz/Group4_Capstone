@@ -23,18 +23,10 @@
             android:orientation="vertical">
 
 
-            <FrameLayout
-                android:id="@+id/flMapFragment"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                tools:layout="@layout/fragment_top_banner">
-
-            </FrameLayout>
-
             <com.google.android.gms.maps.MapView
                 android:id="@+id/mapView"
                 android:layout_width="match_parent"
-                android:layout_height="731dp"
+                android:layout_height="0dp"
                 tools:ignore="SpeakableTextPresentCheck" />
 
         </LinearLayout>
