@@ -7,14 +7,192 @@
     tools:context=".Schedule">
 
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="You Are Viewing the Schedule"
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            >
+
+        <GridLayout
+            android:id="@+id/gridSched"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#696969"
+            android:columnCount="8"
+            android:rowCount="9"
+            android:paddingVertical="1dp"
+            android:paddingHorizontal="1dp"
+            >
+
+            <TextView
+                android:id="@+id/tvPlaceholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_margin="1px"
+                android:background="#696969"
+                android:fontFamily="@font/roboto_black"
+                android:gravity="center"
+                android:text="A.M."
+                android:textColor="@color/amber_01"
+                android:textSize="9pt"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/tvMonday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mon"
+                android:layout_margin="1px"
+                android:textColor="@color/amber_01"
+                android:background="#696969"
+                android:layout_columnWeight="1"
+                android:fontFamily="@font/roboto_black"
+                android:textSize="9pt"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tvTuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tue"
+                android:layout_margin="1px"
+                android:gravity="center"
+                android:textColor="@color/amber_01"
+                android:background="#696969"
+                android:layout_columnWeight="1"
+                android:fontFamily="@font/roboto_black"
+                android:textSize="9pt"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tvWednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wed"
+                android:layout_margin="1px"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:textColor="@color/amber_01"
+                android:background="#696969"
+                android:fontFamily="@font/roboto_black"
+                android:textSize="9pt"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tvThursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thu"
+                android:layout_margin="1px"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:textColor="@color/amber_01"
+                android:background="#696969"
+                android:fontFamily="@font/roboto_black"
+                android:textSize="9pt"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tvFriday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fri"
+                android:layout_margin="1px"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:textColor="@color/amber_01"
+                android:background="#696969"
+                android:fontFamily="@font/roboto_black"
+                android:textSize="9pt"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tvSaturday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sat"
+                android:layout_margin="1px"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:textColor="@color/amber_01"
+                android:background="#696969"
+                android:fontFamily="@font/roboto_black"
+                android:textSize="9pt"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tvSunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sun"
+                android:layout_margin="1px"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:background="#696969"
+                android:textColor="@color/amber_01"
+                android:fontFamily="@font/roboto_black"
+                android:textSize="9pt"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_vector_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.899"
+        tools:ignore="SpeakableTextPresentCheck" />>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

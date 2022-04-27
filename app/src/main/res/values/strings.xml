@@ -19,7 +19,7 @@
     <!--General-->
     <string name="days_shown">Days Shown</string>
     <string name="dark_toggle">Dark Theme</string>
-    <string name="topbanner_toggle">Show Top Banner</string>
+    <string name="topbanner_toggle">Hide Top Banner</string>
 
     <!--Sound-->
     <string name="volume_setting">Set Volume Within Application</string>

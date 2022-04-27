@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         app:itemIconTint="@drawable/selector"
+        app:itemIconSize="100px"
         app:itemTextColor="@drawable/selector"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
