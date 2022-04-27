@@ -3,196 +3,508 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".Schedule">
-
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            >
-
-        <GridLayout
-            android:id="@+id/gridSched"
+        <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#696969"
-            android:columnCount="8"
-            android:rowCount="9"
-            android:paddingVertical="1dp"
-            android:paddingHorizontal="1dp"
-            >
+            android:stretchColumns="*">
 
-            <TextView
-                android:id="@+id/tvPlaceholder"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_row="0"
-                android:layout_column="0"
-                android:layout_columnWeight="1"
-                android:layout_margin="1px"
-                android:background="#696969"
-                android:fontFamily="@font/roboto_black"
-                android:gravity="center"
-                android:text="A.M."
-                android:textColor="@color/amber_01"
-                android:textSize="9pt"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="SpeakableTextPresentCheck" />
+            <!--Header Row-->
+            <TableRow
+                android:id="@+id/firstRow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/tvMonday"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mon"
-                android:layout_margin="1px"
-                android:textColor="@color/amber_01"
-                android:background="#696969"
-                android:layout_columnWeight="1"
-                android:fontFamily="@font/roboto_black"
-                android:textSize="9pt"
-                android:gravity="center"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/tvPlaceholder"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text="A.M."
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/tvMonday"
+                    android:layout_margin="1px"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text="Mon"
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
 
 
-            <TextView
-                android:id="@+id/tvTuesday"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tue"
-                android:layout_margin="1px"
-                android:gravity="center"
-                android:textColor="@color/amber_01"
-                android:background="#696969"
-                android:layout_columnWeight="1"
-                android:fontFamily="@font/roboto_black"
-                android:textSize="9pt"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/tvTuesday"
+                    android:layout_margin="1px"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text="Tue"
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
 
 
-            <TextView
-                android:id="@+id/tvWednesday"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Wed"
-                android:layout_margin="1px"
-                android:gravity="center"
-                android:layout_columnWeight="1"
-                android:textColor="@color/amber_01"
-                android:background="#696969"
-                android:fontFamily="@font/roboto_black"
-                android:textSize="9pt"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/tvWednesday"
+                    android:layout_margin="1px"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text="Wed"
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
 
 
-            <TextView
-                android:id="@+id/tvThursday"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Thu"
-                android:layout_margin="1px"
-                android:gravity="center"
-                android:layout_columnWeight="1"
-                android:textColor="@color/amber_01"
-                android:background="#696969"
-                android:fontFamily="@font/roboto_black"
-                android:textSize="9pt"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/tvThursday"
+                    android:layout_margin="1px"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text="Thu"
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
 
 
-            <TextView
-                android:id="@+id/tvFriday"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Fri"
-                android:layout_margin="1px"
-                android:gravity="center"
-                android:layout_columnWeight="1"
-                android:textColor="@color/amber_01"
-                android:background="#696969"
-                android:fontFamily="@font/roboto_black"
-                android:textSize="9pt"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/tvFriday"
+                    android:layout_margin="1px"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text="Fri"
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+            </TableRow>
+
+            <!--1st Period-->
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/periodFirst"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:paddingVertical="35px"
+                    android:text="7:00\nto\n8:00"
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/firstMon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="1px"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/firstTue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="1px"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/firstWed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="1px"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/firstThu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="1px"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/firstFri"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="1px"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
 
 
-            <TextView
-                android:id="@+id/tvSaturday"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Sat"
-                android:layout_margin="1px"
-                android:gravity="center"
-                android:layout_columnWeight="1"
-                android:textColor="@color/amber_01"
-                android:background="#696969"
-                android:fontFamily="@font/roboto_black"
-                android:textSize="9pt"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            </TableRow>
 
 
-            <TextView
-                android:id="@+id/tvSunday"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Sun"
-                android:layout_margin="1px"
-                android:gravity="center"
-                android:layout_columnWeight="1"
-                android:background="#696969"
-                android:textColor="@color/amber_01"
-                android:fontFamily="@font/roboto_black"
-                android:textSize="9pt"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            <!--2nd Period-->
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/periodSecond"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:paddingVertical="35px"
+                    android:text="8:00\nto\n9:00"
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/secondMon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="1px"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/secondTue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="1px"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/secondWed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="1px"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/secondThu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="1px"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/secondFri"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="1px"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
 
 
-            </GridLayout>
+            </TableRow>
 
-        </LinearLayout>
+            <!--Health Break-->
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/periodBreak"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:paddingVertical="35px"
+                    android:text="9:00\nto\n9:30"
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+            </TableRow>
+
+            <!--3rd Period-->
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/periodThird"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:paddingVertical="35px"
+                    android:text="9:30\nto\n10:30"
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/thirdMon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="1px"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/thirdTue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="1px"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/thirdWed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="1px"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/thirdThu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="1px"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/thirdFri"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="1px"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+
+            </TableRow>
+
+            <!--4th Period-->
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/periodFourth"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:paddingVertical="35px"
+                    android:text="10:30\nto\n11:30"
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/fourthMon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="1px"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/fourthTue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="1px"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/fourthWed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="1px"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/fourthThu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="1px"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/fourthFri"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="1px"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+
+            </TableRow>
+
+            <!--5th Period-->
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/periodFifth"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:paddingVertical="35px"
+                    android:text="11:30\nto\n12:30"
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/fifthMon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="1px"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/fifthTue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="1px"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/fifthWed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="1px"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/fifthThu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="1px"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/fifthFri"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="1px"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+
+            </TableRow>
+
+            <!--Lunch-->
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/periodLunch"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:paddingVertical="35px"
+                    android:text="12:30\nP.M."
+                    android:textColor="@color/amber_01"
+                    android:textSize="9pt" />
+
+
+            </TableRow>
+
+        </TableLayout>
+        >
 
     </androidx.core.widget.NestedScrollView>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_vector_add"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.912"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.899"
-        tools:ignore="SpeakableTextPresentCheck" />>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
