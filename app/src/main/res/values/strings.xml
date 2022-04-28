@@ -11,23 +11,23 @@
 
     <!--Settings Fragment-->
 
-        <!-- Preference Titles -->
+    <!-- Preference Titles -->
     <string name="sound_header">Sound</string>
     <string name="notif_header">Notifications and Alerts</string>
     <string name="general_header">General</string>
 
-        <!--General-->
+    <!--General-->
     <string name="days_shown">Days Shown</string>
     <string name="dark_toggle">Dark Theme</string>
     <string name="topbanner_toggle">Hide Top Banner</string>
 
-        <!--Sound-->
+    <!--Sound-->
     <string name="volume_setting">Set Volume In Application</string>
     <string name="alert_slider">Alert Volume</string>
     <string name="notif_slider">Notification Volume</string>
     <string name="general_slider">General Volume</string>
 
-        <!--Notifications and Alerts-->
+    <!--Notifications and Alerts-->
     <string name="push_toggle">Allow Push Notifications</string>
     <string name="vibrate_toggle">Allow Device Vibration</string>
 
@@ -36,8 +36,8 @@
     <string name="address">Computer Lab 3B, Hall4, Academic Bldg.</string>
     <string name="materials">Materials Needed: Notebook, Pen (No Snacks Allowed)</string>
 
-   <!--Schedule Time Labels-->
-        <!--Morning-->
+    <!--Schedule Time Labels-->
+    <!--Morning-->
     <string name="topRightAM">A.M.</string>
     <string name="AMfirstPeriod">7:00\nto\n8:00</string>
     <string name="AMsecondPeriod">8:00\nto\n9:00</string>
@@ -47,7 +47,7 @@
     <string name="AMfifthPeriod">11:00\nto\n12:30</string>
     <string name="AMDismissal">12:30\nP.M.</string>
 
-        <!--Afternoon-->
+    <!--Afternoon-->
     <string name="topRightPM">P.M.</string>
     <string name="PMfirstPeriod">1:00\nto\n2:00</string>
     <string name="PMsecondPeriod">2:00\nto\n3:00</string>
@@ -56,5 +56,8 @@
     <string name="PMfourthPeriod">4:00\nto\n5:30</string>
     <string name="PMfifthPeriod">5:00\nto\n6:30</string>
     <string name="PMDismissal">6:30\nP.M.</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
