@@ -11,24 +11,23 @@
 
     <!--Settings Fragment-->
 
-    <!-- Preference Titles -->
+        <!-- Preference Titles -->
     <string name="sound_header">Sound</string>
     <string name="notif_header">Notifications and Alerts</string>
     <string name="general_header">General</string>
 
-    <!--General-->
+        <!--General-->
     <string name="days_shown">Days Shown</string>
     <string name="dark_toggle">Dark Theme</string>
     <string name="topbanner_toggle">Hide Top Banner</string>
 
-    <!--Sound-->
-    <string name="volume_setting">Set Volume Within Application</string>
-    <!--<string name="volume_key">volume</string>-->
+        <!--Sound-->
+    <string name="volume_setting">Set Volume In Application</string>
     <string name="alert_slider">Alert Volume</string>
     <string name="notif_slider">Notification Volume</string>
     <string name="general_slider">General Volume</string>
 
-    <!--Notifications and Alerts-->
+        <!--Notifications and Alerts-->
     <string name="push_toggle">Allow Push Notifications</string>
     <string name="vibrate_toggle">Allow Device Vibration</string>
 
@@ -37,15 +36,25 @@
     <string name="address">Computer Lab 3B, Hall4, Academic Bldg.</string>
     <string name="materials">Materials Needed: Notebook, Pen (No Snacks Allowed)</string>
 
-    <!-- Message Preferences -->
-    <string name="signature_title">Your signature</string>
-    <string name="reply_title">Default reply action</string>
+   <!--Schedule Time Labels-->
+        <!--Morning-->
+    <string name="topRightAM">A.M.</string>
+    <string name="AMfirstPeriod">7:00\nto\n8:00</string>
+    <string name="AMsecondPeriod">8:00\nto\n9:00</string>
+    <string name="AMbreakPeriod">9:00\nto\n9:30</string>
+    <string name="AMthirdPeriod">9:30\nto\n10:30</string>
+    <string name="AMfourthPeriod">10:00\nto\n11:30</string>
+    <string name="AMfifthPeriod">11:00\nto\n12:30</string>
+    <string name="AMDismissal">12:30\nP.M.</string>
 
-    <!-- Sync Preferences -->
-    <string name="sync_title">Sync email periodically</string>
-    <string name="attachment_title">Download incoming attachments</string>
-    <string name="attachment_summary_on">Automatically download attachments for incoming emails
-    </string>
-    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+        <!--Afternoon-->
+    <string name="topRightPM">P.M.</string>
+    <string name="PMfirstPeriod">1:00\nto\n2:00</string>
+    <string name="PMsecondPeriod">2:00\nto\n3:00</string>
+    <string name="PMbreakPeriod">3:00\nto\n3:30</string>
+    <string name="PMthirdPeriod">3:30\nto\n4:30</string>
+    <string name="PMfourthPeriod">4:00\nto\n5:30</string>
+    <string name="PMfifthPeriod">5:00\nto\n6:30</string>
+    <string name="PMDismissal">6:30\nP.M.</string>
 
 </resources>

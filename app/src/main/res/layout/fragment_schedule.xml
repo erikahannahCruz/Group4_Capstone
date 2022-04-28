@@ -23,14 +23,15 @@
             <TableRow
                 android:id="@+id/firstRow"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:background="@color/off_black2">
 
                 <TextView
                     android:id="@+id/tvPlaceholder"
                     android:layout_weight="1"
                     android:fontFamily="@font/roboto_black"
                     android:gravity="center"
-                    android:text="A.M."
+                    android:text="@string/topRightAM"
                     android:textColor="@color/amber_01"
                     android:textSize="9pt" />
 
@@ -91,7 +92,9 @@
             </TableRow>
 
             <!--1st Period-->
-            <TableRow>
+            <TableRow
+                android:background="@color/off_black1"
+                >
 
                 <TextView
                     android:id="@+id/periodFirst"
@@ -99,7 +102,7 @@
                     android:fontFamily="@font/roboto_black"
                     android:gravity="center"
                     android:paddingVertical="35px"
-                    android:text="7:00\nto\n8:00"
+                    android:text="@string/AMfirstPeriod"
                     android:textColor="@color/amber_01"
                     android:textSize="9pt" />
 
@@ -166,9 +169,10 @@
 
             </TableRow>
 
-
             <!--2nd Period-->
-            <TableRow>
+            <TableRow
+                android:background="@color/off_black2"
+                >
 
                 <TextView
                     android:id="@+id/periodSecond"
@@ -176,7 +180,7 @@
                     android:fontFamily="@font/roboto_black"
                     android:gravity="center"
                     android:paddingVertical="35px"
-                    android:text="8:00\nto\n9:00"
+                    android:text="@string/AMsecondPeriod"
                     android:textColor="@color/amber_01"
                     android:textSize="9pt" />
 
@@ -244,7 +248,9 @@
             </TableRow>
 
             <!--Health Break-->
-            <TableRow>
+            <TableRow
+                android:background="@color/off_black1"
+                >
 
                 <TextView
                     android:id="@+id/periodBreak"
@@ -252,14 +258,27 @@
                     android:fontFamily="@font/roboto_black"
                     android:gravity="center"
                     android:paddingVertical="35px"
-                    android:text="9:00\nto\n9:30"
+                    android:text="@string/AMbreakPeriod"
                     android:textColor="@color/amber_01"
                     android:textSize="9pt" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_span="5"
+                    android:gravity="center"
+                    android:text="Health Break"
+                    android:textColor="@color/amber_01"
+                    android:fontFamily="@font/roboto_black"
+                    android:textSize="13pt"
+                    />
 
             </TableRow>
 
             <!--3rd Period-->
-            <TableRow>
+            <TableRow
+                android:background="@color/off_black2"
+                >
 
                 <TextView
                     android:id="@+id/periodThird"
@@ -267,7 +286,7 @@
                     android:fontFamily="@font/roboto_black"
                     android:gravity="center"
                     android:paddingVertical="35px"
-                    android:text="9:30\nto\n10:30"
+                    android:text="@string/AMthirdPeriod"
                     android:textColor="@color/amber_01"
                     android:textSize="9pt" />
 
@@ -335,7 +354,9 @@
             </TableRow>
 
             <!--4th Period-->
-            <TableRow>
+            <TableRow
+                android:background="@color/off_black1"
+                >
 
                 <TextView
                     android:id="@+id/periodFourth"
@@ -343,7 +364,7 @@
                     android:fontFamily="@font/roboto_black"
                     android:gravity="center"
                     android:paddingVertical="35px"
-                    android:text="10:30\nto\n11:30"
+                    android:text="@string/AMfourthPeriod"
                     android:textColor="@color/amber_01"
                     android:textSize="9pt" />
 
@@ -411,7 +432,9 @@
             </TableRow>
 
             <!--5th Period-->
-            <TableRow>
+            <TableRow
+                android:background="@color/off_black2"
+                >
 
                 <TextView
                     android:id="@+id/periodFifth"
@@ -419,7 +442,7 @@
                     android:fontFamily="@font/roboto_black"
                     android:gravity="center"
                     android:paddingVertical="35px"
-                    android:text="11:30\nto\n12:30"
+                    android:text="@string/AMfifthPeriod"
                     android:textColor="@color/amber_01"
                     android:textSize="9pt" />
 
@@ -487,7 +510,9 @@
             </TableRow>
 
             <!--Lunch-->
-            <TableRow>
+            <TableRow
+                android:background="@color/off_black1"
+                >
 
                 <TextView
                     android:id="@+id/periodLunch"
@@ -495,15 +520,26 @@
                     android:fontFamily="@font/roboto_black"
                     android:gravity="center"
                     android:paddingVertical="35px"
-                    android:text="12:30\nP.M."
+                    android:text="@string/AMDismissal"
                     android:textColor="@color/amber_01"
                     android:textSize="9pt" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_span="5"
+                    android:gravity="center"
+                    android:textColor="@color/amber_01"
+                    android:text="Dismissal"
+                    android:fontFamily="@font/roboto_black"
+                    android:textSize="13pt"
+                    />
 
 
             </TableRow>
 
         </TableLayout>
-        >
+
 
     </androidx.core.widget.NestedScrollView>
 

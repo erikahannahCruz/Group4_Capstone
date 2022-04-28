@@ -8,16 +8,28 @@
             app:title="@string/days_shown"
             app:entries="@array/days_entry"
             app:entryValues="@array/days_value"
-            app:summary=""
-            app:dialogTitle="@string/days_shown"
+            android:key="daysShown"
             />
 
         <SwitchPreference
             app:title="@string/dark_toggle"
+            app:defaultValue="false"
+            android:key="dark_theme"
             />
 
         <SwitchPreference
             app:title="@string/topbanner_toggle"
+            app:defaultValue="false"
+            android:key="hide_topbanner"
+            />
+
+        <ListPreference
+            android:key="ampm_scheduleSet"
+            app:title="Schedule Shown"
+            app:entryValues="@array/ampm_values"
+            app:entries="@array/ampm_entries"
+            app:defaultValue="morning"
+            app:useSimpleSummaryProvider="true"
             />
 
 
@@ -27,18 +39,23 @@
 
         <CheckBoxPreference
             app:title="@string/volume_setting"
+            android:key="setVolume"
+            app:defaultValue="true"
             />
 
         <SeekBarPreference
             app:title="@string/alert_slider"
+            android:dependency="setVolume"
             />
 
         <SeekBarPreference
             app:title="@string/notif_slider"
+            android:dependency="setVolume"
             />
 
         <SeekBarPreference
             app:title="@string/general_slider"
+            android:dependency="setVolume"
             />
 
     </PreferenceCategory>
@@ -47,9 +64,11 @@
 
         <SwitchPreference
             app:title="@string/push_toggle"
+            app:defaultValue="true"
             />
         <SwitchPreference
             app:title="@string/vibrate_toggle"
+            app:defaultValue="true"
             />
 
     </PreferenceCategory>
