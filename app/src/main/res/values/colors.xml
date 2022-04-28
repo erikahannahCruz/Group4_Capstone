@@ -4,7 +4,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="off_white1">#DEDEDE</color>
+    <color name="off_white1">#F3F3F3</color>
+    <color name="off_white2">#EAEAEA</color>
 
     <color name="off_black1">#2E3130</color>
     <color name="off_black2">#393d3b</color>

@@ -1,17 +1,25 @@
 package com.example.group4_capstone;
 
 import android.os.Bundle;
+import android.widget.CompoundButton;
 
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.appcompat.widget.SwitchCompat;
+import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
+import androidx.preference.SwitchPreference;
 
 public class Settings extends PreferenceFragmentCompat {
 
     public void Settings() {
-        //suck my ass
+        //Required empty public constructor
     }
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
+
+        //this was here from the beginning
         setPreferencesFromResource(R.xml.root_preferences, rootKey);
+
     }
 }

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/background1"
     tools:context=".MainActivity">
 
     <FrameLayout
@@ -33,7 +34,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/ic_vector_add"
             app:fabCustomSize="65dp"
-            android:backgroundTint="@color/lime"
+            android:backgroundTint="@color/amber_01"
             app:layout_anchor="@id/bottomApp" />
 
         <com.google.android.material.bottomappbar.BottomAppBar

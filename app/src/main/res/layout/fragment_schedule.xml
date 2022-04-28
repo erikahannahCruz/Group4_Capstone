@@ -24,7 +24,7 @@
                 android:id="@+id/firstRow"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:background="@color/off_black2">
+                android:background="?attr/row2">
 
                 <TextView
                     android:id="@+id/tvPlaceholder"
@@ -93,7 +93,7 @@
 
             <!--1st Period-->
             <TableRow
-                android:background="@color/off_black1"
+                android:background="?attr/row1"
                 >
 
                 <TextView
@@ -171,7 +171,7 @@
 
             <!--2nd Period-->
             <TableRow
-                android:background="@color/off_black2"
+                android:background="?attr/row2"
                 >
 
                 <TextView
@@ -249,7 +249,7 @@
 
             <!--Health Break-->
             <TableRow
-                android:background="@color/off_black1"
+                android:background="?attr/row1"
                 >
 
                 <TextView
@@ -277,7 +277,7 @@
 
             <!--3rd Period-->
             <TableRow
-                android:background="@color/off_black2"
+                android:background="?attr/row2"
                 >
 
                 <TextView
@@ -355,7 +355,7 @@
 
             <!--4th Period-->
             <TableRow
-                android:background="@color/off_black1"
+                android:background="?attr/row1"
                 >
 
                 <TextView
@@ -433,7 +433,7 @@
 
             <!--5th Period-->
             <TableRow
-                android:background="@color/off_black2"
+                android:background="?attr/row2"
                 >
 
                 <TextView
@@ -511,7 +511,7 @@
 
             <!--Lunch-->
             <TableRow
-                android:background="@color/off_black1"
+                android:background="?attr/row1"
                 >
 
                 <TextView
