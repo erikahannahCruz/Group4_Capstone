@@ -1,3 +1,5 @@
+//REPLACED WITH THE GOOGLE CALENDAR INTEGRATION AS OF APR 28
+
 package com.example.group4_capstone;
 
 import android.os.Bundle;

@@ -12,6 +12,8 @@ import androidx.annotation.NonNull;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.util.Calendar;
+
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener  {
 
     BottomNavigationView bottomNavigationView;
@@ -44,22 +46,30 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         //displays top banner information on startup
         getSupportFragmentManager().beginTransaction().replace(R.id.flFragmentTopBanner, topbanner).commit();
 
+        /* Initially to show the alarm xml
         fabAlarm = findViewById(R.id.fabAlarm);
-
         fabAlarm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v) {
                 getSupportFragmentManager().beginTransaction().replace(R.id.flFragmentMain, alarmSet).commit();
-
-                /* Intent intent = new Intent(MainActivity.this,Alarm.class);
-                startActivity(intent); */
             }
 
-        });
+        }); */
 
 
     }
 
+    public void AddCalendarEvent (View view) {
+        Calendar calendarEvent = Calendar.getInstance();
+        Intent i = new Intent (Intent.ACTION_EDIT);
+        i.setType("vnd.android.cursor.item/event");
+        i.putExtra("beginTime", calendarEvent.getTimeInMillis());
+        i.putExtra("allDay", true);
+        i.putExtra("rule", "FREQ-YEARLY");
+        i.putExtra("endTime", calendarEvent.getTimeInMillis() + 60 * 60 * 1000);
+        i.putExtra("title", "Calendar Event");
+        startActivity(i);
+    }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
