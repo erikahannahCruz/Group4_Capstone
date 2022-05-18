@@ -126,9 +126,10 @@
                     android:layout_margin="1px"
                     android:fontFamily="@font/roboto_black"
                     android:gravity="center"
-                    android:text=""
-                    android:textColor="@color/amber_01"
-                    android:textSize="9pt" />
+                    android:text="ORIE\n-NTA\n-TION"
+                    android:background="@color/lime"
+                    android:textColor="@color/off_black2"
+                    android:textSize="6pt" />
 
                 <TextView
                     android:id="@+id/firstWed"
@@ -147,12 +148,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1"
+                    android:background="@color/amber_03"
                     android:layout_margin="1px"
                     android:fontFamily="@font/roboto_black"
                     android:gravity="center"
-                    android:text=""
-                    android:textColor="@color/amber_01"
-                    android:textSize="9pt" />
+                    android:text="TVL3"
+                    android:textColor="@color/off_black2"
+                    android:textSize="6pt" />
 
                 <TextView
                     android:id="@+id/firstFri"
@@ -160,11 +162,12 @@
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1"
                     android:layout_margin="1px"
+                    android:background="@color/lime"
                     android:fontFamily="@font/roboto_black"
                     android:gravity="center"
-                    android:text=""
-                    android:textColor="@color/amber_01"
-                    android:textSize="9pt" />
+                    android:text="HR"
+                    android:textColor="@color/off_black2"
+                    android:textSize="6pt" />
 
 
             </TableRow>
@@ -190,11 +193,12 @@
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1"
                     android:layout_margin="1px"
+                    android:background="@color/amber_03"
                     android:fontFamily="@font/roboto_black"
                     android:gravity="center"
-                    android:text=""
-                    android:textColor="@color/amber_01"
-                    android:textSize="9pt" />
+                    android:text="COR\n6D"
+                    android:textColor="@color/off_black2"
+                    android:textSize="6pt" />
 
                 <TextView
                     android:id="@+id/secondTue"
@@ -214,11 +218,12 @@
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1"
                     android:layout_margin="1px"
+                    android:background="@color/amber_03"
                     android:fontFamily="@font/roboto_black"
                     android:gravity="center"
-                    android:text=""
-                    android:textColor="@color/amber_01"
-                    android:textSize="9pt" />
+                    android:text="APP7"
+                    android:textColor="@color/off_black2"
+                    android:textSize="6pt" />
 
                 <TextView
                     android:id="@+id/secondThu"
@@ -228,9 +233,10 @@
                     android:layout_margin="1px"
                     android:fontFamily="@font/roboto_black"
                     android:gravity="center"
-                    android:text=""
-                    android:textColor="@color/amber_01"
-                    android:textSize="9pt" />
+                    android:background="@color/amber_02"
+                    android:text="TVL3"
+                    android:textColor="@color/off_black2"
+                    android:textSize="6pt" />
 
                 <TextView
                     android:id="@+id/secondFri"
@@ -308,11 +314,12 @@
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1"
                     android:layout_margin="1px"
+                    android:background="@color/amber_02"
                     android:fontFamily="@font/roboto_black"
                     android:gravity="center"
-                    android:text=""
-                    android:textColor="@color/amber_01"
-                    android:textSize="9pt" />
+                    android:text="TVL4"
+                    android:textColor="@color/off_black2"
+                    android:textSize="6pt" />
 
                 <TextView
                     android:id="@+id/thirdWed"
@@ -332,11 +339,12 @@
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1"
                     android:layout_margin="1px"
+                    android:background="@color/lime"
                     android:fontFamily="@font/roboto_black"
                     android:gravity="center"
-                    android:text=""
-                    android:textColor="@color/amber_01"
-                    android:textSize="9pt" />
+                    android:text="CUST\n-OM"
+                    android:textColor="@color/off_black2"
+                    android:textSize="6pt" />
 
                 <TextView
                     android:id="@+id/thirdFri"
@@ -386,11 +394,12 @@
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1"
                     android:layout_margin="1px"
+                    android:background="@color/amber_03"
                     android:fontFamily="@font/roboto_black"
                     android:gravity="center"
-                    android:text=""
-                    android:textColor="@color/amber_01"
-                    android:textSize="9pt" />
+                    android:text="TVL4"
+                    android:textColor="@color/off_black2"
+                    android:textSize="6pt" />
 
                 <TextView
                     android:id="@+id/fourthWed"
@@ -398,11 +407,12 @@
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1"
                     android:layout_margin="1px"
+                    android:background="@color/amber_02"
                     android:fontFamily="@font/roboto_black"
                     android:gravity="center"
-                    android:text=""
-                    android:textColor="@color/amber_01"
-                    android:textSize="9pt" />
+                    android:text="TVL3"
+                    android:textColor="@color/off_black2"
+                    android:textSize="6pt" />
 
                 <TextView
                     android:id="@+id/fourthThu"
@@ -424,9 +434,10 @@
                     android:layout_margin="1px"
                     android:fontFamily="@font/roboto_black"
                     android:gravity="center"
-                    android:text=""
-                    android:textColor="@color/amber_01"
-                    android:textSize="9pt" />
+                    android:text="MATH\n1"
+                    android:background="@color/amber_03"
+                    android:textColor="@color/off_black2"
+                    android:textSize="6pt" />
 
 
             </TableRow>
@@ -452,11 +463,12 @@
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1"
                     android:layout_margin="1px"
+                    android:background="@color/amber_03"
                     android:fontFamily="@font/roboto_black"
                     android:gravity="center"
-                    android:text=""
-                    android:textColor="@color/amber_01"
-                    android:textSize="9pt" />
+                    android:text="ICT2"
+                    android:textColor="@color/off_black2"
+                    android:textSize="6pt" />
 
                 <TextView
                     android:id="@+id/fifthTue"
@@ -464,11 +476,12 @@
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1"
                     android:layout_margin="1px"
+                    android:background="@color/amber_02"
                     android:fontFamily="@font/roboto_black"
                     android:gravity="center"
-                    android:text=""
-                    android:textColor="@color/amber_01"
-                    android:textSize="9pt" />
+                    android:text="TVL4"
+                    android:textColor="@color/off_black2"
+                    android:textSize="6pt" />
 
                 <TextView
                     android:id="@+id/fifthWed"
@@ -476,11 +489,12 @@
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1"
                     android:layout_margin="1px"
+                    android:background="@color/amber_03"
                     android:fontFamily="@font/roboto_black"
                     android:gravity="center"
-                    android:text=""
-                    android:textColor="@color/amber_01"
-                    android:textSize="9pt" />
+                    android:text="TVL3"
+                    android:textColor="@color/off_black2"
+                    android:textSize="6pt" />
 
                 <TextView
                     android:id="@+id/fifthThu"
@@ -500,11 +514,12 @@
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1"
                     android:layout_margin="1px"
+                    android:background="@color/lime"
                     android:fontFamily="@font/roboto_black"
                     android:gravity="center"
-                    android:text=""
-                    android:textColor="@color/amber_01"
-                    android:textSize="9pt" />
+                    android:text="CLUB"
+                    android:textColor="@color/off_black2"
+                    android:textSize="6pt" />
 
 
             </TableRow>
