@@ -376,7 +376,7 @@
                 app:layout_constraintVertical_bias="0.056"
                 tools:srcCompat="@tools:sample/avatars" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/imgRew1"
                 android:layout_width="110dp"
                 android:layout_height="110dp"
@@ -385,9 +385,9 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtView3"
                 app:srcCompat="@drawable/img_disposable"
-                tools:srcCompat="@tools:sample/avatars" />
+                tools:srcCompat="@tools:sample/avatars"/>
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/imgRew3"
                 android:layout_width="110dp"
                 android:layout_height="110dp"
@@ -395,9 +395,9 @@
                 app:layout_constraintStart_toStartOf="@+id/imgRew1"
                 app:layout_constraintTop_toBottomOf="@+id/imgRew1"
                 app:srcCompat="@drawable/img_disposable"
-                tools:srcCompat="@tools:sample/avatars" />
+                tools:srcCompat="@tools:sample/avatars"/>
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/imgRew5"
                 android:layout_width="110dp"
                 android:layout_height="110dp"
@@ -405,9 +405,9 @@
                 app:layout_constraintStart_toStartOf="@+id/imgRew3"
                 app:layout_constraintTop_toBottomOf="@+id/imgRew3"
                 app:srcCompat="@drawable/img_disposable"
-                tools:srcCompat="@tools:sample/avatars" />
+                tools:srcCompat="@tools:sample/avatars"/>
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/imgRew2"
                 android:layout_width="110dp"
                 android:layout_height="110dp"
@@ -415,16 +415,16 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/imgRew1"
                 app:srcCompat="@drawable/img_disposable"
-                tools:srcCompat="@tools:sample/avatars" />
+                tools:srcCompat="@tools:sample/avatars"/>
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/imgRew4"
                 android:layout_width="110dp"
                 android:layout_height="110dp"
                 app:layout_constraintEnd_toEndOf="@+id/imgRew2"
                 app:layout_constraintTop_toTopOf="@+id/imgRew3"
                 app:srcCompat="@drawable/img_disposable"
-                tools:srcCompat="@tools:sample/avatars" />
+                tools:srcCompat="@tools:sample/avatars"/>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

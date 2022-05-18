@@ -11,7 +11,7 @@
             app:title="@string/days_shown" />
 
         <SwitchPreference
-            android:key="dark_theme"
+            android:key="@string/dark_key"
             app:defaultValue="false"
             app:title="@string/dark_toggle" />
 
