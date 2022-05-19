@@ -26,7 +26,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="@drawable/transparent_background">
+        android:background="@android:color/transparent">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fabAlarm"
@@ -48,7 +48,7 @@
             app:contentInsetStart="0dp"
             app:fabCradleRoundedCornerRadius="20dp"
             app:fabCradleVerticalOffset="0.1px"
-            android:background="@drawable/transparent_background">
+            android:background="@android:color/transparent">
 
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/bottomNavigationView"

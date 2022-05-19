@@ -88,6 +88,7 @@
                 android:layout_height="16dp"
                 android:layout_marginTop="40dp"
                 android:progressTint="@color/lime"
+                android:progress="100"
                 android:scaleY="2"
                 app:layout_constraintEnd_toStartOf="@+id/txtExp"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -251,7 +252,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/roboto_medium"
-                android:text="Reward 1"
+                android:text="Juice Bottle"
                 android:textSize="7pt"
                 app:layout_constraintEnd_toEndOf="@+id/imgRew1"
                 app:layout_constraintStart_toStartOf="@+id/imgRew1"
@@ -265,7 +266,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/roboto_medium"
-                android:text="Reward 3"
+                android:text="+2 pts. in assessment"
                 android:textSize="7pt"
                 app:layout_constraintEnd_toEndOf="@+id/imgRew3"
                 app:layout_constraintStart_toStartOf="@+id/imgRew3"
@@ -279,8 +280,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/roboto_medium"
-                android:text="Reward 4
-"
+                android:text="+3 pts. in assessment"
                 android:textSize="7pt"
                 app:layout_constraintEnd_toEndOf="@+id/imgRew4"
                 app:layout_constraintStart_toStartOf="@+id/imgRew4"
@@ -295,7 +295,7 @@
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/roboto_medium"
                 android:paddingBottom="10pt"
-                android:text="Reward 5"
+                android:text="+5 pts. in assessment"
                 android:textSize="7pt"
                 app:layout_constraintEnd_toEndOf="@+id/imgRew5"
                 app:layout_constraintStart_toStartOf="@+id/imgRew5"
@@ -309,7 +309,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/roboto_medium"
-                android:text="Reward 2"
+                android:text="+1 pt. in assessment"
                 android:textSize="7pt"
                 app:layout_constraintEnd_toEndOf="@+id/imgRew2"
                 app:layout_constraintStart_toStartOf="@+id/imgRew2"
@@ -374,7 +374,9 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.056"
-                tools:srcCompat="@tools:sample/avatars" />
+                 />
+
+            <!--Rewards Image Buttons-->
 
             <ImageButton
                 android:id="@+id/imgRew1"
@@ -382,49 +384,64 @@
                 android:layout_height="110dp"
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="28dp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtView3"
-                app:srcCompat="@drawable/img_disposable"
-                tools:srcCompat="@tools:sample/avatars"/>
+                android:foreground="@drawable/imgrew_juice"
+                android:background="?attr/background1"
+                />
 
             <ImageButton
                 android:id="@+id/imgRew3"
                 android:layout_width="110dp"
                 android:layout_height="110dp"
                 android:layout_marginTop="68dp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
                 app:layout_constraintStart_toStartOf="@+id/imgRew1"
                 app:layout_constraintTop_toBottomOf="@+id/imgRew1"
-                app:srcCompat="@drawable/img_disposable"
-                tools:srcCompat="@tools:sample/avatars"/>
+                android:foreground="@drawable/imgrew_two"
+                android:background="?attr/background1"
+                />
 
             <ImageButton
                 android:id="@+id/imgRew5"
                 android:layout_width="110dp"
                 android:layout_height="110dp"
                 android:layout_marginTop="68dp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
                 app:layout_constraintStart_toStartOf="@+id/imgRew3"
                 app:layout_constraintTop_toBottomOf="@+id/imgRew3"
-                app:srcCompat="@drawable/img_disposable"
-                tools:srcCompat="@tools:sample/avatars"/>
+                android:foreground="@drawable/imgrew_five"
+                android:background="?attr/background1"
+                />
 
             <ImageButton
                 android:id="@+id/imgRew2"
                 android:layout_width="110dp"
                 android:layout_height="110dp"
                 android:layout_marginRight="35dp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/imgRew1"
-                app:srcCompat="@drawable/img_disposable"
-                tools:srcCompat="@tools:sample/avatars"/>
+                android:foreground="@drawable/imgrew_one"
+                android:background="?attr/background1"
+                />
 
             <ImageButton
                 android:id="@+id/imgRew4"
                 android:layout_width="110dp"
                 android:layout_height="110dp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
                 app:layout_constraintEnd_toEndOf="@+id/imgRew2"
                 app:layout_constraintTop_toTopOf="@+id/imgRew3"
-                app:srcCompat="@drawable/img_disposable"
-                tools:srcCompat="@tools:sample/avatars"/>
+                android:foreground="@drawable/imgrew_three"
+                android:background="?attr/background1"
+                />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
